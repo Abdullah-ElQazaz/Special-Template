@@ -1,0 +1,128 @@
+:root {
+  --main-color: #FF9800;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Start Setting Box */
+.setting-box {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100vh;
+  z-index: 99;
+  background-color: #ffffff;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.setting-box.open {
+  left: 0;
+}
+
+.setting-box .fa-gear {
+  position: absolute;
+  width: 30px;
+  right: -30px;
+  background: white;
+  top: 100px;
+  padding: 8px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* End Setting Box */
+
+/* Start Landing Page */
+.landing-page {
+  min-height: 100vh;
+  background-image: url('../imgs/01.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.landing-page .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 1;
+}
+
+.landing-page .header-area {
+  position: relative;
+  color: white;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.landing-page .header-area .logo {
+  width: 300px;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.landing-page .header-area .links {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+.landing-page .header-area .links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.landing-page .header-area .links li a {
+  text-decoration: none;
+  color: white;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.landing-page .header-area .links li a:hover,
+.landing-page .header-area .links li a.active {
+  color: var(--main-color);
+}
+
+.intro-test {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  width: 95%;
+}
+
+.intro-test h1 {
+  font-size: 34px;
+  margin: 0 0 12px;
+}
+
+.intro-test h1 span {
+  color: var(--main-color);
+}
+
+.intro-test p {
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+/* End Landing Page */
